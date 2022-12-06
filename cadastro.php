@@ -1,16 +1,32 @@
 <?php 
-if(isset($_POST['email'])){
+if(isset($_POST['nome']) || isset($_POST['email']) || isset($_POST['senha'])){
 
     include("conexao.php");
 
-    $nome = $_POST["nome"];
-    $email = $_POST["email"];
-    $senha = $_POST['senha'];
+    // $nome = $_POST["nome"];
+    // $email = $_POST["email"];
+    // $senha = $_POST['senha'];
 
-    $mysqli->query("INSERT INTO usuarios (nome, email, senha) VALUES('$nome','$email', '$senha')");
+    if(strlen($_POST['nome']) == 0 ){
+        echo "Preencha seu nome";
+    }else if(strlen($_POST['email'])== 0) {
+        echo "Preencha sua e-mail";
+    }else if(strlen($_POST['senha'])== 0) {
+        echo "Preencha sua senha";
+    }else{
+        //segurança anti fraude// 
+        
+        $nome = $mysqli->real_escape_string($_POST['nome']);
+        $email = $mysqli->real_escape_string($_POST['email']);
+        $senha = $mysqli->real_escape_string($_POST['senha']);
+
+    $mysqli->query("INSERT INTO usuarios (nome, email, senha) VALUES('$nome', '$email', '$senha')");
 
     header("Location: index.php");
 }
+}
+
+
 ?>
 
 <!DOCTYPE html>
