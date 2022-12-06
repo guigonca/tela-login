@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    font-family: 'Noto Serif Khojki', serif;
+    
+}
+body{
+    background-image: url("fundo.jpg");   
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    background: #6c7a8900;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.box{
+    border-radius: 15px;
+    box-shadow: 4px 5px 17px 14px rgba(0,0,0,0.75);
+    width: 350px;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    background: #fff;
+    text-align: center;
+ }
+.box2{
+    border-radius: 15px;
+    box-shadow: 4px 5px 17px 14px rgba(0,0,0,0.75);
+    width: 345px;
+    height: 470px;
+    display: flex;
+    align-items: center;
+    background: #fff;
+    text-align: center;
+
+ }
+ form{
+    width: 100%;
+    height: 100%;
+ }
+ h1{   
+    width: auto;
+    margin: 25px;
+    font-size: 35px;
+ }
+ .login{
+    width: 75%;
+    height: 25px;
+    margin: 10px;
+    border-radius: 5px;
+    padding: 10px;
+    border-color: chartreuse;
+ }
+
+ #entrar{
+    width: 30%;
+    padding: 5px;
+    margin-bottom: 20px;
+    border-color: chartreuse;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+    
+ }
+
+ #entrar:hover{
+    background-color: rgba(128, 255, 0, 0.719);
+    transition: 0.5s;
+ }
+
+ #sair{
+    
+   position: relative;
+   top: 150px;
+   right: 195px;
+   padding: 10px;
+   
+}
+#sair:hover{
+    background-color: chartreuse;
+    border-radius: 30px;
+    transition: 1.5s;
+ }
+ 
+ 
+

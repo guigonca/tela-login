@@ -48,26 +48,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Khojki:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
     <title>Login</title>
 </head>
 <body>
-    <form action="" method="POST">
-        <h1>Acesse sua conta</h1>
-        <p>
-            <label>E-mail</label>
-            <input type="text" name="email">
-        </p>
+    
+    <div class="container">
+        <div class="box">
+            <form action="" method="POST">
+                <h1>Login</h1>
+                
+                <input class="login" type="text" name="email" placeholder="E-mail">            
+                
+                <input class="login"type="password" name="senha" placeholder="Senha"> <br>              
+                
+                <button id="entrar" type="submit">Entrar </button> 
+            
+                               
+                <p class="sair"><a href="cadastro.php">Criar cadastro</a></p>
+            </form>
+        </div>
+    </div>
 
-        <p>
-            <label>Senha</label>
-            <input type="password" name="senha">
-        </p>
-        <p>
-            <button type="submit">Entrar </button>
-        </p>
-
-
-    </form>
     
 </body>
 </html>

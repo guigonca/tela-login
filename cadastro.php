@@ -19,28 +19,35 @@ if(isset($_POST['email'])){
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Khojki:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
     <title>Cadastro</title>
 </head>
 <body>
-    <form action="" method="post">
-        <h1>Cadastre seu e-mail e senha</h1>
-        <p>
-            <label>Nome</label>
-            <input type="text" name="nome">
-        </p>
-        <p>
-            <label>E-mail</label>
-            <input type="email" name="email">
-        </p>
+    <div class="container">
+        <div class="box2">
+            <form action="" method="post">
+                <h1>Cadastro</h1>
+                <p>
+                    
+                    <input class="login" type="text" name="nome" placeholder="Nome">
+                </p>
+                <p>
+                    
+                    <input class="login" type="email" name="email" placeholder="E-mail">
+                </p>
+                <p>
+                    <input class="login"type="password" name="senha" placeholder="Senha">
+                </p>
+                <br>
+                <button id="entrar" type="submit">Cadastrar</button>
+                <br>
+                <a href="index.php">Área de login</a>
+            
+            </form>
+        </div>
+    </div>
 
-        <p>
-            <label>Senha</label>
-            <input type="password" name="senha">
-        </p>
-        <button type="submit">Cadastrar</button>
-
-    
-
-    </form>
+    <p><a href="index.php">Tela de login</a></p>
 </body>
 </html>
